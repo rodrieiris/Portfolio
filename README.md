@@ -1,5 +1,3 @@
-# Portfolio
-
 # 🚀 **Rodrigo Eirís - Portfolio** 🌐
 
 ¡Bienvenido a mi portafolio! Soy **Rodrigo Eirís**, un apasionado **Desarrollador Web** especializado en crear soluciones digitales innovadoras utilizando tecnologías de vanguardia. Este repositorio es una muestra de mi trabajo y de mi trayectoria en el mundo del desarrollo web, con proyectos que van desde aplicaciones web responsivas hasta soluciones personalizadas para plataformas como **WordPress** y **PrestaShop**.
