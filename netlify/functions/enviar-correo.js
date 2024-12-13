@@ -18,8 +18,8 @@ exports.handler = async (event) => {
         const msg = {
             to: process.env.SENDGRID_TO_EMAIL, // Destinatario desde el .env
             from: process.env.SENDGRID_FROM_EMAIL, // Remitente desde el .env
-            subject: 'Nuevo mensaje de contacto de ${nombre}',
-            text: 'Correo electrónico: ${email}\nMensaje:\n${mensaje}',
+            subject: `Nuevo mensaje de contacto de ${nombre}`,
+            text: `Correo electrónico: ${email}\nMensaje:\n${mensaje}`,
         };
 
         // Envía el correo usando SendGrid
