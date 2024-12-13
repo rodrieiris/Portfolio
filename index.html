@@ -50,9 +50,10 @@
             </a>
         </div>
 
-        <a href="/CV/CV_RodrigoEirisPadin.pdf" class="btn" download="CV_RodrigoEirisPadin">Descargar CV</a>
-        <a href="#proyectos" class="btn" id="btn-proyectos">Ver Proyectos</a>
-        
+        <div class="btns-inicio">
+            <a href="/CV/CV_RodrigoEirisPadin.pdf" class="btn" download="CV_RodrigoEirisPadin.pdf">Descargar CV</a>
+            <a href="#proyectos" class="btn" id="btn-proyectos">Ver Proyectos</a>
+        </div>
     </div>
 
     <div class="contenedor-estudios">
@@ -72,12 +73,6 @@
     ACERCA-DE
 -->
 <section id="acerca-de">
-    <!--
-    <div class="acerca-de-img">
-        <img src="" alt="">
-    </div>
-    -->
-
     <h2 class="cabecera">Acerca <span>de</span></h2>
     <div class="contenido-acerca-de">
         <p class="parrafo-izq">
@@ -118,11 +113,10 @@
 <!--
     CONTACTO
 -->
-<!--
 <section id="contacto">
     <h2>Contacto</h2>
     <p>Si tienes alguna pregunta, no dudes en contactarme.</p>
-    <form id="form-contacto" action="/.netlify/functions/enviarCorreo" method="POST">
+    <form id="form-contacto" class="contacto-formulario" action="/.netlify/functions/enviar-correo" method="POST">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" placeholder="Nombre..." required>
     
@@ -135,12 +129,15 @@
         <button type="submit">Enviar</button>
     </form>
 </section>
--->
+
 
 <!--
     BOTÓN FLOTANTE
 -->
-<button id="boton-arriba" title="Volver arriba">&#8679;</button>
+<button id="boton-arriba" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
 
 <!--
     FOOTER

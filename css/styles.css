@@ -107,6 +107,7 @@ nav ul.menu {
 
     nav ul.menu.show {
         display: flex;
+        align-items: flex-end;
     }
 
     .menu-toggle {
@@ -298,6 +299,138 @@ span {
     color: var(--main-color);
 }
 
+/* Responsive */
+@media (max-width: 1200px) {
+    #inicio {
+        padding: 40px 30px;
+    }
+
+    #inicio .contenido h1 {
+        font-size: 3.5rem;
+    }
+
+    #inicio .contenido h3 {
+        font-size: 2rem;
+    }
+
+    #inicio .contenido p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #inicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #inicio .contenido {
+        max-width: 100%;
+    }
+
+    #inicio .social-links {
+        justify-content: center;
+    }
+
+    #btn-proyectos {
+        margin-left: 0;
+    }
+
+    a#btn-proyectos {
+        margin-left: 15px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #inicio {
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    #inicio .contenido h1 {
+        font-size: 3rem;
+    }
+
+    #inicio .contenido h3 {
+        font-size: 1.8rem;
+    }
+
+    #inicio .contenido p {
+        font-size: 1rem;
+    }
+
+    #inicio .btn {
+        /*padding: 0.8rem 1.5rem;*/
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    #inicio .social-links a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+
+    .btns-inicio {
+        display: flex
+    ;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    a#btn-proyectos {
+        margin-left: 0 !important;
+    }
+
+    #inicio .contenido {
+        margin-bottom: 0;
+    }
+
+    .esfera {
+        height: 315px;
+        margin-bottom: 60px;
+    }
+
+    .texto {
+        transform: rotateY(calc(var(--i)* 90deg)) translateZ(200px);
+    }
+}
+
+@media (max-width: 576px) {
+    #inicio {
+        padding: 20px 15px;
+    }
+
+    #inicio .contenido h1 {
+        font-size: 2.5rem;
+    }
+
+    #inicio .contenido h3 {
+        font-size: 1.5rem;
+    }
+
+    #inicio .contenido p {
+        font-size: 0.9rem;
+    }
+
+    #inicio .btn {
+        /*padding: 0.6rem 1.2rem;*/
+        font-size: 0.8rem;
+    }
+
+    #inicio .social-links a {
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1.4rem;
+    }
+
+    .texto {
+        transform: rotateY(calc(var(--i)* 90deg)) translateZ(180px);
+    }
+}
+
 /* Estilos de la sección de acerca de */
 #acerca-de {
     position: relative;
@@ -430,6 +563,15 @@ span {
 
 /* Medios Responsivos */
 @media (max-width: 768px) {
+    #acerca-de {
+        padding: 40px 16px 50px;
+        min-height: 0;
+    }
+
+    #acerca-de .cabecera {
+        margin-bottom: 0;
+    }
+
     .contenido-acerca-de {
         padding: 0 20px;
         text-align: center;
@@ -444,6 +586,12 @@ span {
         line-height: 1.6;
         padding: 10px;
         text-align: justify;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenido-acerca-de {
+        padding: 0;
     }
 }
 
@@ -559,6 +707,22 @@ span {
     margin-right: 25%;
 }
 
+@media (max-width: 768px) {
+    #proyectos .warning {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .warning:hover {
+        transform: scale(1.01); /* Aumenta el tamaño ligeramente */
+    }
+
+    #proyectos {
+        padding: 40px 16px 50px;
+    }
+}
+
 /* Estilos de la sección de contacto */
 #contacto {
     padding: 50px 16px;
@@ -647,6 +811,20 @@ textarea {
     background-color: #e69500; /* Naranja más oscuro */
 }
 
+@media (max-width: 768px) {
+    #contacto {
+        padding: 40px 16px 50px;
+    }
+
+    #contacto h2 {
+        margin-bottom: 0;
+    }
+
+    #contacto p {
+        margin-bottom: 20px;
+    }
+}
+
 /* Botón flotante */
 #boton-arriba {
     position: fixed;
@@ -679,6 +857,15 @@ textarea {
 /* Ajuste cuando el botón se encuentra con el footer */
 #boton-arriba.en-footer {
     transform: translateY(-100px); /* Sube el botón para evitar el footer */
+}
+
+#boton-arriba:hover {
+    background-color: #6c20b8;
+    /*transform: scale(1.1);*/
+}
+
+#boton-arriba i {
+    font-size: 1.5rem;
 }
 
 /* Estilos del footer */
